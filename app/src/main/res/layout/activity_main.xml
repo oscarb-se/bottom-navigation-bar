@@ -15,17 +15,12 @@
         android:orientation="horizontal">
 
         <!-- Tre knappar med text och ikon -->
+        <!-- TODO: Fixa så ikonen är vit för API mindre än 23 -->
 
-        <!-- TODO: Ikonen är svart, ska vara vit -->
-        <!-- TODO: Texten kapas av, borde inte det -->
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="Favorites"
-            android:drawableTop="@drawable/ic_favorite_24dp"
-            android:textColor="@android:color/white"
-            style="?android:attr/borderlessButtonStyle"
-            />
+
+            style="@style/inactiveButton" />
 
 
     </LinearLayout>
