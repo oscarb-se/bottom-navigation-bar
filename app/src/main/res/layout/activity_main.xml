@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="se.oscarb.bottomnavigationbar.MainActivity">
+
+    <!-- Fragment -->
+    <fragment
+        android:name="se.oscarb.bottomnavigationbar.RecentsFragment"
+        android:id="@+id/recents_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
 
     <!-- Bottom Navigation Bar -->
     <LinearLayout
@@ -20,17 +31,20 @@
         <Button
             android:text="Recents"
             android:drawableTop="@drawable/ic_history_24dp"
-            style="@style/InactiveButton"/>
+            style="@style/InactiveButton"
+            android:onClick="displayFragment"/>
 
         <Button
             android:text="Favorites"
             android:drawableTop="@drawable/ic_favorite_24dp"
-            style="@style/InactiveButton" />
+            style="@style/InactiveButton"
+            android:onClick="displayFragment"/>
 
         <Button
             android:text="Nearby"
             android:drawableTop="@drawable/ic_place_24dp"
-            style="@style/InactiveButton" />
+            style="@style/InactiveButton"
+            android:onClick="displayFragment"/>
 
 
 
