@@ -18,9 +18,20 @@
         <!-- TODO: Fixa så ikonen är vit för API mindre än 23 -->
 
         <Button
-            android:text="Favorites"
+            android:text="Recents"
+            android:drawableTop="@drawable/ic_history_24dp"
+            style="@style/InactiveButton"/>
 
-            style="@style/inactiveButton" />
+        <Button
+            android:text="Favorites"
+            android:drawableTop="@drawable/ic_favorite_24dp"
+            style="@style/InactiveButton" />
+
+        <Button
+            android:text="Nearby"
+            android:drawableTop="@drawable/ic_place_24dp"
+            style="@style/InactiveButton" />
+
 
 
     </LinearLayout>
